@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+veggie = Garden.create(name: "Veggie")
+flower = Garden.create(name: "Flower")
+herb = Garden.create(name: "Herb")
