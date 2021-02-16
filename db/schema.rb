@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_02_15_001302) do
     t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "garden_id"
+    t.bigint "garden_id", null: false
     t.index ["garden_id"], name: "index_plants_on_garden_id"
   end
 
