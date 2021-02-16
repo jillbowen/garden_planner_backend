@@ -12,6 +12,6 @@ class Api::V1::GardensController < ApplicationController
     private
 
     def garden_params
-        params.require(:garden).permit()
+        params.require(:garden).permit(:name)
     end
 end
