@@ -8,7 +8,7 @@ class Api::V1::PlantsController < ApplicationController
     def create
         plant = Plant.new(plant_params)
         if plant.save
-            render json: plant, status: :accepted
+            render json: PlantSerializer.new(plant), status: :accepted
         else
             render json: {errors: plant.errors.full_messages}, status: :unprocessible_entity
         end
