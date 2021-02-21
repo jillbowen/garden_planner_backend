@@ -14,6 +14,12 @@ class Api::V1::PlantsController < ApplicationController
         end
     end
 
+    def destroy
+        plant = Plant.find_by(id: params[:id])
+        plant.destroy
+        render json: PlantSerializer.new(plant)
+    end
+
     private
 
     def plant_params
