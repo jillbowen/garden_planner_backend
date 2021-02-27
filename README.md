@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to your garden planner! This repository is the back-end. The front end can be found here: https://github.com/jillbowen/garden_planner_frontend
 
-Things you may want to cover:
+This single page app allows you to create a digital version of your garden to help you keep track of what's growing, and how to care for it.
 
-* Ruby version
+To install: -clone this repository: git clone git@github.com:jillbowen/garden-planner-backend.git -cd garden-planner-backend
 
-* System dependencies
+Be sure to check your Ruby version (ruby -v this project uses ruby '2.6.1', use rbenv to get to the correct version)
 
-* Configuration
+Also be sure you have bundle dependencies installed.
 
-* Database creation
+Initialize the database: -rails db:create -rails db:migrate
 
-* Database initialization
+Seed some data if you want to see examples of how your plants will look on the frontend: -rails db:seed
 
-* How to run the test suite
+Start the server: rails s
 
-* Services (job queues, cache servers, search engines, etc.)
+And then head over to the front end: https://github.com/jillbowen/garden_planner_frontend
 
-* Deployment instructions
-
-* ...
+Enjoy gardening!
